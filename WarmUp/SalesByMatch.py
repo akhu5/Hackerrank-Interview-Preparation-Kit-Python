@@ -1,9 +1,6 @@
 #!/bin/python3
-import math
+
 import os
-import random
-import re
-import sys
 from collections import Counter
 
 # Complete the sockMerchant function below.
@@ -16,9 +13,8 @@ def sockMerchant(n, ar):
             freq_dict[ar[i]] += 1
         else:
             freq_dict[ar[i]] = 1
-    for i in freq_dict.keys():
-        if freq_dict[i] >= 2:
-            counter += freq_dict[i] // 2
+    for i in freq_dict:
+        counter += freq_dict[i] // 2
     return counter
 
 def sockMerchant_optimal(n, ar):
