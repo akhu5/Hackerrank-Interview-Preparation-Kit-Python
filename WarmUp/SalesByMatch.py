@@ -18,7 +18,7 @@ def sockMerchant(n, ar):
     return counter
 
 def sockMerchant_optimal(n, ar):
-    #NOT my soln
+    #NOT my solution
     socks, pairs = Counter(ar), 0
     for s in socks: pairs += socks[s] // 2
     return pairs
